@@ -1,0 +1,98 @@
+.testimonial {
+  /*border-right: 4px solid #ffd105;*/
+box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+    padding: 30px 30px 30px 35px;
+    margin: 0 15px 30px 15px;
+    overflow: hidden;
+    position: relative;
+    border: 1px solid #dddbdb;
+   
+  
+}
+.testimonial:before {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: -17px;
+  /*border-top: 25px solid #172745;
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;*/
+  transform: rotate(45deg);
+}
+.testimonial:after {
+  content: "";
+  position: absolute;
+  top: -4px;
+  left: -17px;
+  /*border-top: 25px solid #172745;
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;*/
+  transform: rotate(135deg);
+}
+.testimonial .pic {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  overflow: hidden;
+  position: absolute;
+  top: 60px;
+  left: 20px;
+}
+.testimonial .pic img {
+  width: 100%;
+  height: auto;
+}
+.testimonial .description {
+  font-size: 15px;
+  letter-spacing: 1px;
+  color:#060606;
+  line-height: 25px;
+  margin-bottom: 15px;
+}
+.testimonial .title {
+  display: inline-block;
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color:#474747;
+  margin: 0;
+}
+.testimonial .post {
+  display: inline-block;
+  font-size: 17px;
+  color: #29d18b;
+  font-style: italic;
+}
+.owl-theme .owl-controls .owl-page span {
+   background: #dc3545 !important;
+    border-color: #dc3545;
+  background: #fff !important;
+  border:1px solid #ccc;
+  opacity: 1;
+}
+.owl-theme .owl-controls .owl-page.active span,
+.owl-theme .owl-controls .owl-page:hover span {
+ background: #dc3545 !important;
+    border-color: #dc3545;
+    border-radius: 100%!Important;
+}
+.testimonial svg{
+color:#d8d8d8;
+width: 75px;
+    height: 75px;
+	margin-bottom:20px;
+	
+}
+@media only screen and (max-width: 767px) {
+  .testimonial {
+    padding: 20px;
+    text-align: center;
+  }
+  .testimonial .pic {
+    display: block;
+    position: static;
+    margin: 0 auto 15px;
+  }
+}
